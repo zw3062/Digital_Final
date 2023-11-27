@@ -47,7 +47,7 @@ void convert() {
 }
 void play() {
 
-  for (int i = 0; 1 < 6; i++) {
+  for (int i = 0; i < 6; i++) {
     buttonState[i] = digitalRead(buttons[i]);
     if (buttonState[i] == HIGH && lastButtonState[i] == LOW) {
       Serial.println(buttonState[i]);
